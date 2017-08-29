@@ -3,6 +3,7 @@
 body {
     color: #878787;
     margin: 0;
+    font-size: 1em;
 }
 
 ol li {
@@ -10,19 +11,20 @@ ol li {
     color: white;
     margin-bottom: 5px;
     border: dotted 5px white;
+    width: 75%;
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 5.663119rem;
     color: white;
 }
 
 h2 {
-    font-size: 53px;
+    font-size: 3.236068rem;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.1545rem;
     color: #48525c;
 }
 
@@ -38,14 +40,18 @@ h3 {
 
 .main-header {
     background-color: orange;
+
 }
 
 .title {
     color: white;
-    font-size: 26px;
+    font-size: 1.618034rem;
 }
 
-
+.primary-content,
+.secondary-content {
+    width: 60%;
+}
 
 .primary-content {
     text-align: center;
