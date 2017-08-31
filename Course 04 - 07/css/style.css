@@ -37,6 +37,17 @@ img {
     margin-bottom: 20px;
 }
 
+ol,
+ul {
+    padding-left: 0px;
+    margin-left: 0px;
+
+}
+
+li {
+    margin-bottom: 10px;
+}
+
 /* Pseudo-classes ------------------ */
 
 a:link {
@@ -134,6 +145,21 @@ a:active {
 
 .arrow {
     width: 50px;
+}
+
+/* Floated Columns ------------------ */
+
+.resorts,
+.tips {
+    width: 46.5%;
+}
+
+.tips {
+    float: right;
+}
+
+.resorts {
+    float: left;
 }
 
 /* Float Clearfix ------------------ */
