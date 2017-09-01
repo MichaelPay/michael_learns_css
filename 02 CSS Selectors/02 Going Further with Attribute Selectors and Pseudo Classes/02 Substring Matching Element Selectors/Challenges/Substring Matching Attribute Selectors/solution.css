@@ -1,0 +1,27 @@
+/*Challenge Task 1 of 3
+
+Create a selector that targets an img element if its title value begins with "product-". Set the border color to lightblue.
+
+Challenge Task 2 of 3
+
+Next, create a new selector that targets an a element if its href value ends with ".html". Set its text-decoration to none.
+
+Challenge Task 3 of 3
+
+Finally, create a new selector that targets an img element if its src value contains the word "preview". Then, set its width to 100%.
+
+*/
+
+
+/* Complete the challenge by writing CSS below */
+img[title^="product-"] {
+  border-color: lightblue;
+}
+
+a[href$=".html"] {
+  text-decoration: none;
+}
+
+img[src*="preview"] {
+  width: 100%;
+}
