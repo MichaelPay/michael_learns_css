@@ -11,18 +11,60 @@
     margin: auto;
 }
 
-input[placeholder] {
-    background-color: yellow;
-}
 
-input[type='button'],
-input[type="reset"],
-input[type='submit'] {
-    cursor: pointer;
-}
+
 
 a[target='_blank'] {
     color: #39add1;
     text-decoration: none;
     border: dotted;
+}
+
+/* DRY Classes ------------- */
+
+.br {
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+}
+
+.avatar {
+    display: block;
+    margin: 0 auto 2em;
+}
+
+.rounded {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: .875em;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    opacity: .75;
+}
+
+.default {
+    background-color: #52bab3;
+
+}
+
+.error {
+    background-color: #ff784f;
+}
+
+@media (min-width: 769px) {
+    .inln  {
+        width: auto;
+        display: inline-block;
+    }
 }
