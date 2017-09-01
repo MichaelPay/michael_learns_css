@@ -1,0 +1,91 @@
+/* Attribute Selectors ------------- */
+
+.form-contact {
+    color: red;
+    padding: 20px 24px;
+    background: #f4f7f8;
+}
+
+#container{
+    max-width: 500px;
+    margin: auto;
+}
+
+
+
+
+a[target='_blank'] {
+    color: #39add1;
+    text-decoration: none;
+    border: dotted;
+}
+
+/* DRY Classes ------------- */
+
+.br {
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+}
+
+.avatar {
+    display: block;
+    margin: 0 auto 2em;
+}
+
+.rounded {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: .875em;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    opacity: .75;
+}
+
+.default {
+    background-color: #52bab3;
+
+}
+
+.error {
+    background-color: #ff784f;
+}
+
+@media (min-width: 769px) {
+    .inln  {
+        width: auto;
+        display: inline-block;
+    }
+    /* Adjacent combinator */
+    .btn + .btn {
+        margin-left: 20px;
+    }
+}
+
+/* Combinators ------------- */
+
+/* Anything that's an immediate child of a form element gets applied*/
+form > a {
+    font-size: .7em;
+}
+
+/* Target all sibling label elements that follow an h1
+General Sibling Selector
+*/
+h1 ~ label {
+    background-color: tomato;
+    color: white;
+    padding: 5px;
+
+}
