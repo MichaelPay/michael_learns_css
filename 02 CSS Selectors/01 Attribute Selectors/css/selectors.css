@@ -67,4 +67,25 @@ a[target='_blank'] {
         width: auto;
         display: inline-block;
     }
+    /* Adjacent combinator */
+    .btn + .btn {
+        margin-left: 20px;
+    }
+}
+
+/* Combinators ------------- */
+
+/* Anything that's an immediate child of a form element gets applied*/
+form > a {
+    font-size: .7em;
+}
+
+/* Target all sibling label elements that follow an h1
+General Sibling Selector
+*/
+h1 ~ label {
+    background-color: tomato;
+    color: white;
+    padding: 5px;
+
 }
