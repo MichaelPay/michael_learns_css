@@ -1,0 +1,27 @@
+/*
+Challenge Task 1 of 3
+
+Inside the media query, create a new rule that targets img elements. Then, float the images left.
+
+Challenge Task 2 of 3
+
+We want three floated images per row. In the media query, create a pseudo-class selector that targets the fourth img child element first, then every third img that follows. Then, add a clear property that clears the left float.
+
+Challenge Task 3 of 3
+
+Hey, nice job! To see which combination of images we selected, give them a different border-color value –– any color you want. Don't forget to preview before you click "check work".
+
+
+*/
+
+/* Write the CSS in the media query below */
+
+@media (min-width: 607px) {
+  img {
+    float: left;
+  }
+  img:nth-child(3n+4) {
+    clear: left;
+    border-color: tomato;
+  }
+}
