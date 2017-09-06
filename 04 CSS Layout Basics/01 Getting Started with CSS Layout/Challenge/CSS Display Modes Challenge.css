@@ -1,0 +1,44 @@
+/*
+Challenge Task 1 of 3
+
+Display the list items inside .main-nav side by side.
+Use the display value that generates a block element that flows with surrounding content.
+
+
+Challenge Task 2 of 3
+
+The <ul> with the class main-nav is a block-level element by default, so it takes
+up the full width of its container. Let's set .main-nav to be as wide as the content inside it.
+Change the display of .main-nav to the display value that generates a block element that
+doesn't take up a full line.
+
+Challenge Task 3 of 3
+
+The logo is an <img>, so it displays inline with surrounding content by default.
+The logo displays on the same line as .main-nav and the auto margins have no effect on it.
+Place the .logo on a separate line by changing its display mode.
+
+*/
+
+
+/* Complete the challenge by writing CSS below */
+
+header {
+  text-align: center;
+}
+.logo {
+  width: 110px;
+  margin: auto;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
+.main-nav {
+    display: inline-block;
+}
+
+.logo {
+    display: block;
+}
