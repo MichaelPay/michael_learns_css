@@ -45,10 +45,15 @@ img {
 .name {
 	font-size: 1.25em;
 }
+.main-header, .main-nav {
+}
 
 .name a,
 .main-nav a {
 	text-align: center;
+    display: block;
+
+
 }
 
 .main-nav a {
@@ -78,6 +83,10 @@ img {
 
 .logo {
 	width: 190px;
+    margin: 0 auto;
+    padding-top: 2em;
+    display: block;
+
 }
 
 /* ================================= 
@@ -95,5 +104,56 @@ img {
 		display: table;
 		clear: both;
 	}
+    .name {
+        float: left;
+        margin-left: 1em;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        margin: 1em;
+        float: right;
+    }
+
+    .main-header ul {
+        margin-right: 2em;
+    }
+
+    .banner {
+        margin: 0 auto;
+
+    }
+    .headline,
+    .tagline {
+        text-align: center;
+        display: block;
+    }
+
+    .tagline {
+        padding-bottom: 3em;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .secondary,
+    .primary,
+    .tertiary {
+        width: 32%;
+        display: inline-block;
+        padding-left: 1em;
+        padding-right: 1em;
+        vertical-align: top;
+        padding-top: 3em;
+        margin: 0 auto;
+    }
+    
+    .main-footer {
+        text-align: center;
+    }
+
+
 
 }
