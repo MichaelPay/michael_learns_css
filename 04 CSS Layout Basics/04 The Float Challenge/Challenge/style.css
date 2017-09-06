@@ -1,0 +1,46 @@
+/*
+Challenge Task 1 of 4
+
+Float .footer-nav to the left edge of the footer and .logo to the right edge.
+
+
+Challenge Task 2 of 4
+
+Next, display the list items inside .footer-nav side by side with a float.
+
+Challenge Task 3 of 4
+
+The floats inside the <footer> caused its height to collapse. Give the <footer>
+element the class that will clear all floats inside it.
+
+Challenge Task 4 of 4
+
+The copyright text in the footer needs to be moved down below the floated elements.
+Select .copyright and apply the property and value that clears both the left and right floats.
+*/
+
+
+/* Complete the challenge by writing CSS below */
+
+
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer-nav {
+  float: left;
+}
+.footer-nav li {
+  float: left;
+}
+
+.logo {
+  float: right;
+}
+
+.copyright {
+  clear: both;
+}
