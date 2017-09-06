@@ -1,0 +1,27 @@
+/*
+Challenge Task 1 of 3
+
+Select the class logo and give it absolute positioning.
+
+
+Challenge Task 2 of 3
+
+Next, give .logo a top offset of -45px and a left offset of 125px.
+
+Challenge Task 3 of 3
+
+The logo's absolute position is relative to the browser viewport. Make .card the new positioning context for .logo.
+
+*/
+
+/* Complete the challenge by writing CSS below */
+
+.logo {
+    position: absolute;
+    top: -45px;
+    left: 125px;
+}
+
+.card {
+    position: relative;
+}
