@@ -138,4 +138,18 @@ a {
 		clear: both;
 	}
 
+	.col {
+		float: left;
+        padding-right: 1em;
+        padding-left: 1em;
+	}
+	.primary {
+		width: 60%;
+	}
+
+	.secondary {
+		width: 40%;
+
+	}
+
 }
