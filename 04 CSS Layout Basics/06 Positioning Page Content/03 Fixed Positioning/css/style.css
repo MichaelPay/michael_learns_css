@@ -3,60 +3,60 @@
 ==================================== */
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: 'Varela Round', sans-serif;
-	line-height: 1.6;
-	color: #3a3a3a;
+    font-family: 'Varela Round', sans-serif;
+    line-height: 1.6;
+    color: #3a3a3a;
 }
 
 p {
-	font-size: .95em;
-	margin-bottom: 1.8em;
+    font-size: .95em;
+    margin-bottom: 1.8em;
 }
 
 h2,
 h3,
 a {
-	color: #093a58;
+    color: #093a58;
 }
 
 h2,
 h3,
 h4 {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 h4 {
-	margin-bottom: .4em;
+    margin-bottom: .4em;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 figure {
-	margin: 0;
-	line-height: 0;
-	position: relative;
+    margin: 0;
+    line-height: 0;
+    position: relative;
 }
 
 figcaption {
-	font-size: .9em;
-	line-height: 1.5;
-	color: #fff;
-	padding: 1em;	
-	background: rgba(19,43,102, .85);
-	
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+    font-size: .9em;
+    line-height: 1.5;
+    color: #fff;
+    padding: 1em;
+    background: rgba(19, 43, 102, .85);
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /* ================================= 
@@ -66,136 +66,150 @@ figcaption {
 /* ---- Navigation ---- */
 
 .name {
-	font-size: 1.25em;
-	margin: 0;
+    font-size: 1.25em;
+    margin: 0;
 }
 
 .main-nav {
-	margin-top: 5px;
+    margin-top: 5px;
 }
 
-	.name a,
-	.main-nav a {
-		display: block;
-		text-align: center;
-		padding: 10px 15px;
-	}
-	
-	.main-nav a {
-		font-size: .95em;
-		color: #3acec2;
-		text-transform: uppercase;
-	}
+.name a,
+.main-nav a {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+}
 
-	.main-nav a:hover {
-		color: #093a58;
-	}
+.main-nav a {
+    font-size: .95em;
+    color: #3acec2;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+    color: #093a58;
+}
 
 /* ---- Layout Containers ---- */
 
 .main-header {
-	padding-top: .5em;
-	padding-bottom: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 .banner,
 .main-footer {
-	text-align: center;
+    text-align: center;
 }
 
 .banner {
-	color: #fff;
-	background: #3acec2;
-	padding: 3.2em 0;
-	margin-bottom: 60px;
+    color: #fff;
+    background: #3acec2;
+    padding: 3.2em 0;
+    margin-bottom: 60px;
 }
 
 .col {
-	padding-right: 1em;
-	padding-left: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 .main-footer {
-	background: #d9e4ea;
-	padding: 2em 0;
-	margin-top: 30px;
+    background: #d9e4ea;
+    padding: 2em 0;
+    margin-top: 30px;
 }
 
 /* ---- Page Elements ---- */
 
 .logo {
-	width: 190px;
+    width: 190px;
 }
 
 .headline {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .icon-location {
-	width: 35px;
-	position: absolute;
-	top: -15px;
-	right: -15px;
+    width: 35px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    z-index: 0;
 }
 
-/* ================================= 
+/* =================================
   Media Queries
 ==================================== */
 
 @media (min-width: 769px) {
 
-	.container {
-		width: 90%;
-		margin: 0 auto;
-	}
+    body {
+        padding-top: 68px;
+    }
 
-	.name,
-	.col {
-		float: left;
-	}
+    .container {
+        width: 90%;
+        margin: 0 auto;
 
-	.primary,
-	.secondary {
-		width: 50%;
-	}
+    }
 
-	.main-nav {
-		float: right;
-	}
+    .main-header {
+        position: fixed;
+        background: #fff;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
 
-	.main-nav li {
-		display: inline-block;
-		margin-left: 15px;
-	}
+    .name,
+    .col {
+        float: left;
+    }
 
-	.tagline {
-		font-size: 1.4em;
-	}
+    .primary,
+    .secondary {
+        width: 50%;
+    }
 
-	/* ---- Float clearfix ---- */
+    .main-nav {
+        float: right;
+    }
 
-	.clearfix::after {
-		content: " ";
-		display: table;
-		clear: both;
-	}
+    .main-nav li {
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    .tagline {
+        font-size: 1.4em;
+    }
+
+    /* ---- Float clearfix ---- */
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
 
 }
 
 @media (min-width: 1025px) {
-	
-	.container {
-		width: 80%;
-		max-width: 1150px;
-	}
 
-	.primary {
-		width: 40%;
-	}
+    .container {
+        width: 80%;
+        max-width: 1150px;
+    }
 
-	.secondary,
-	.tertiary {
-		width: 30%;
-	}
+    .primary {
+        width: 40%;
+    }
+
+    .secondary,
+    .tertiary {
+        width: 30%;
+    }
 
 }
